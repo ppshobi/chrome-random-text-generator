@@ -1,0 +1,10 @@
+ Visual Studio 2015 cache/options directory
+.vs/
+bower_components/
+node_modules/
+logs
+*.log
+js/*.map
+js/ts.js
+.npm
+.DS_Store
