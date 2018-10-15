@@ -4,7 +4,7 @@
     "module": "commonjs",                     /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
     "strict": true,                           /* Enable all strict type-checking options. */
     "outDir": "./build/",
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "allowJs": true,
   },
   "include": [
@@ -13,5 +13,5 @@
   "exclude": [
       "node_modules",
       "**/*.spec.ts"
-  ]
+  ],
 }

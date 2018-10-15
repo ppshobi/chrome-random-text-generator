@@ -3,7 +3,8 @@
     "name": "My App",
     "version": "0.0.1",
     "browser_action": {
-        "default_popup": "popup.html"
+        "default_popup": "popup.html",
+        "title" : "My app title"
     },
     "commands": {
         "toggle-feature-foo": {
@@ -16,7 +17,7 @@
     },
     "background" : {
         "scripts": [
-
+            "js/background.js"
         ],
         "persistent": false
     },

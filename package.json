@@ -11,9 +11,11 @@
   "author": "Shobi",
   "license": "ISC",
   "dependencies": {
+    "@types/jquery": "^3.3.17",
     "faker": "^4.1.0"
   },
   "devDependencies": {
+    "@types/chrome": "0.0.74",
     "@types/faker": "^4.1.4",
     "copy-webpack-plugin": "^4.5.3",
     "css-loader": "^1.0.0",

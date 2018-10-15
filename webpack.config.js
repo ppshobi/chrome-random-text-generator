@@ -4,7 +4,10 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 
 module.exports = {
-  entry: ['./src/index.ts', './src/css/app.scss'],
+  entry: { 
+    app:['./src/index.ts', './src/css/app.scss'],
+    background: './src/js/background.ts', 
+  },
   mode: 'production',
   module: {
     rules: [{
@@ -27,7 +30,7 @@ module.exports = {
     extensions: [ '.tsx', '.ts', '.js', ]
   },
   output: {
-    filename: 'js/bundle.js',
+    filename: 'js/[name].js',
     path: path.resolve(__dirname, 'dist')
   },
   plugins: [
