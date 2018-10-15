@@ -37,6 +37,10 @@ module.exports = {
           to: 'manifest.json',
           toType: 'file'
         },
+        {
+          from: 'src/html',
+          toType: 'file'
+        }
     ]),
       new MiniCssExtractPlugin({
         filename: "css/app.css",

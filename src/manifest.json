@@ -4,5 +4,21 @@
     "version": "0.0.1",
     "browser_action": {
         "default_popup": "popup.html"
-    }
+    },
+    "commands": {
+        "toggle-feature-foo": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+5"
+            },
+            "description": "Toggle feature foo",
+            "global": true
+        }
+    },
+    "background" : {
+        "scripts": [
+
+        ],
+        "persistent": false
+    },
+    "options_page": "options.html"
 }
