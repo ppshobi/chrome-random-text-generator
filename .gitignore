@@ -8,3 +8,4 @@ js/*.map
 js/ts.js
 .npm
 .DS_Store
+dist/
