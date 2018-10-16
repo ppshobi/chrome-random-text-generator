@@ -5,18 +5,8 @@ let r = new Random();
 console.log(r.getParagraph())
 
 
-class Listeners {
-    constructor() {
-        this.bindOptions();
-    }  
+class Listeners { 
 
-    bindOptions() {
-        $('#go-to-options').click(function(e){
-            if (chrome.runtime.openOptionsPage) {
-                chrome.runtime.openOptionsPage();            
-            }
-        });
-    }
 }
 
 new Listeners();

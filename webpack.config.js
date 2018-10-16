@@ -7,6 +7,7 @@ module.exports = {
   entry: { 
     app:['./src/index.ts', './src/css/app.scss'],
     background: './src/js/background.ts', 
+    options:['./src/js/options.ts']
   },
   mode: 'production',
   module: {
