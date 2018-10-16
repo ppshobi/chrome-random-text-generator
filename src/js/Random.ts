@@ -60,8 +60,8 @@ export default class Random {
         return Random.faker.locale;
     }
         
-    getParagraph () {
-        return Random.faker.lorem.paragraph();
+    getLorem (size) {
+        return Random.faker.lorem.sentence(size);
     }
 
     getName () {

@@ -27,7 +27,8 @@
     }],
     "options_page": "options.html",
     "permissions": [
-        "storage"
+        "storage",
+        "contextMenus"
     ],
     "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
