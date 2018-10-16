@@ -18,15 +18,12 @@ class Options {
         }
     }
     bindSaveListener(){
+        var self = this;
         $('#save-locale').click(function(){
-
             var obj = {locale: $("#language").val()};
             chrome.storage.sync.set(obj, function() {
-                console.log('Saved Language Preference');
-            });
-
-            chrome.storage.sync.get(['locale'], function(data) {
-                
+                alert('Saved Language Preference');
+                self.r.setLocale();
             });
         });
     }

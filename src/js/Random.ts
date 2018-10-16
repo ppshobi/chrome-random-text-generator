@@ -1,9 +1,10 @@
 import * as faker from 'faker';
 
 export default class Random {
-    private faker = faker;
+    private static faker;
+
     constructor() {
-        this.faker = faker
+        Random.faker = faker
     }
 
     getSupportedLocales() {
@@ -49,8 +50,21 @@ export default class Random {
             zh_TW : 'zh_TW',
         }
     }
+
+    setLocale() {
+        chrome.storage.sync.get(['locale'], function(data) {
+            Random.faker.locale = data.locale;   
+        });
+    }
+    getLocale() {
+        return Random.faker.locale;
+    }
         
     getParagraph () {
-        return this.faker.lorem.paragraph
+        return Random.faker.lorem.paragraph();
+    }
+
+    getName () {
+        return Random.faker.name.findName();
     }
 }
