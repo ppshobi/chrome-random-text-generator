@@ -7,12 +7,11 @@
         "title" : "My app title"
     },
     "commands": {
-        "toggle-feature-foo": {
+        "insert-fake": {
             "suggested_key": {
-                "default": "Ctrl+Shift+5"
+                "default": "Alt+Shift+I"
             },
-            "description": "Toggle feature foo",
-            "global": true
+            "description": "Insert Fake Data to a form field"
         }
     },
     "background" : {
@@ -21,6 +20,11 @@
         ],
         "persistent": false
     },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "all_frames": true,
+        "js":      ["js/content.js"]
+    }],
     "options_page": "options.html",
     "permissions": [
         "storage"
