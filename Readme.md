@@ -27,4 +27,4 @@ Use `Alt + Shift + I` to insert fakeness.
 ## Let me know what you guys think
   Honestly, this project was my effort to learn TypeScript, as well as chrome API's, Still more than halfway to go. I will try to keep adding features.
   
- feel completely free to make PR's and I would love em to see up here. And let me know what you guys think!
+ feel completely free to make PR's and create issues. I would love em to see up here. And let me know what you guys think!
