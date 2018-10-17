@@ -1,6 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Random Text Generator",
+    "description" : "Insert any amount of fake data to a form field. Easy Peasy",
     "version": "0.0.1",
     "browser_action": {
         "default_popup": "popup.html",
@@ -31,5 +32,8 @@
         "clipboardRead",
         "clipboardWrite"
     ],
+    "icons": {
+        "512": "icon/icon_512.png"
+    },
     "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }

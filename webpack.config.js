@@ -45,6 +45,10 @@ module.exports = {
         {
           from: 'src/html',
           toType: 'file'
+        },
+        {
+          from: 'src/icon',
+          to: 'icon',
         }
     ]),
       new MiniCssExtractPlugin({
