@@ -1,7 +1,7 @@
 {
-  "name": "dummy-strings",
+  "name": "random-fake-text-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "A google chrome extension to generate and fill random text into a form field, Built on top of fakerjs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
     "dev": "webpack --mode development ",
     "watch": "webpack --mode development --watch"
   },
-  "author": "Shobi",
+  "author": "Shobi P P",
   "license": "ISC",
   "dependencies": {
     "faker": "^4.1.0",

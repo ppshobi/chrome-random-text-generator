@@ -1,17 +1,17 @@
 {
     "manifest_version": 2,
-    "name": "My App",
+    "name": "Random Text Generator",
     "version": "0.0.1",
     "browser_action": {
         "default_popup": "popup.html",
-        "title" : "My app title"
+        "title" : "Random Text Generator"
     },
     "commands": {
         "insert-fake": {
             "suggested_key": {
                 "default": "Alt+Shift+I"
             },
-            "description": "Insert Fake Data to a form field"
+            "description": "Insert any amount of fake data to a form field"
         }
     },
     "background" : {

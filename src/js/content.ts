@@ -2,13 +2,18 @@ import Random from './Random';
 import * as $ from 'jquery';
 
 let r = new Random();
-console.log("content script loaded");
 
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     let length = NaN;
     
     while(! length ) {
-        length = Number(prompt("Enter the required text length"))
+        let result = prompt("Enter the required text length");
+        if(result === null){
+            return;
+        }
+        
+        length = Number(result);
+
         if(isNaN(length)) {
             alert("Dude!! Enter a number");
         }
