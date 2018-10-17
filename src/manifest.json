@@ -22,13 +22,14 @@
     },
     "content_scripts": [{
         "matches": ["<all_urls>"],
-        "all_frames": true,
-        "js":      ["js/content.js"]
+        "all_frames": false,
+        "js": ["js/content.js"]
     }],
     "options_page": "options.html",
     "permissions": [
-        "storage",
-        "contextMenus"
+        "storage", 
+        "clipboardRead",
+        "clipboardWrite"
     ],
     "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }

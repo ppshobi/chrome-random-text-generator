@@ -3,36 +3,38 @@ import * as $ from 'jquery';
 
 let r = new Random();
 console.log("content script loaded");
+
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
-    var length = prompt("Enter the required text length");
-    var text= r.getLorem(length);
-    var lastFocused;
-    $("input[type='text']").focus(function () {
-        lastFocused = document.activeElement;
-    });
+    let length = NaN;
+    
+    while(! length ) {
+        length = Number(prompt("Enter the required text length"))
+        if(isNaN(length)) {
+            alert("Dude!! Enter a number");
+        }
+    }
 
-    var input = lastFocused;
-    console.log(input);
-    if (input == undefined) { return; }
-    var scrollPos = input.scrollTop;
-    var pos = 0;
-    pos = input.selectionStart
+    let text= r.getLorem(length);
+    let lastFocused = document.activeElement;
 
-
-    var front = (input.value).substring(0, pos);
-    var back = (input.value).substring(pos, input.value.length);
-    input.value = front + text + back;
-    pos = pos + text.length;
-
-    input.selectionStart = pos;
-    input.selectionEnd = pos;
-    input.focus();
-
-    input.scrollTop = scrollPos;
-    sendResponse({ data: 'responded' });
+    if(lastFocused != null 
+        && ($(lastFocused).is('input') || $(lastFocused).is('textarea'))
+        && ! ($(lastFocused).is('input:radio') || $(lastFocused).is('input:radio'))
+    ) {
+        let copyFrom = document.createElement("textarea");
+        copyFrom.textContent = text;
+        document.body.appendChild(copyFrom);
+        copyFrom.select();
+        document.execCommand('copy');
+        copyFrom.blur();
+        document.body.removeChild(copyFrom);
+        $(lastFocused).focus();
+        document.execCommand('paste');
+        sendResponse({ data: 'Copy Successfull' });
+       
+        return;
+    }
+    else {
+        alert('Select any Input element first');
+    }
 });
-
-
-function insertText(text) {
-  
-}

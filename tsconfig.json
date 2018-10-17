@@ -6,6 +6,11 @@
     "outDir": "./build/",
     "noImplicitAny": false,
     "allowJs": true,
+    "lib": [
+      "dom",
+      "es5",
+      "es6"
+    ]
   },
   "include": [
     "src/**/*"
