@@ -7,9 +7,11 @@ Built on top on faker.js. Huge thanks to @marak/faker.js
 ### Built using
 Node, TypeScript, fakerjs
 ## Installation
+Goto the extension page and install.
+http://bit.ly/2P6zUwS
 
-Goto Chrome Webstore and Search for Random Fake Data Generator. 
-Use `Alt + Shift + I` to insert fakeness.
+`Alt + Shift + I` to insert fakeness.
+
 ## Building Instructions
 
 1. clone this repo 
