@@ -21,9 +21,10 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 
     let text= r.getLorem(length);
     let lastFocused = document.activeElement;
-    
+    debugger;
+
     if(lastFocused != null 
-        && ($(lastFocused).is('input') || $(lastFocused).is('textarea'))
+        && ($(lastFocused).is('input') || $(lastFocused).is('textarea') || $(lastFocused).attr('contenteditable'))
         && ! ($(lastFocused).is('input:radio') || $(lastFocused).is('input:radio'))
     ) {
         let copyFrom = document.createElement("textarea");
