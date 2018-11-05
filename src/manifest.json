@@ -10,7 +10,10 @@
     "commands": {
         "insert-fake": {
             "suggested_key": {
-                "default": "Alt+Shift+I"
+                "default": "Ctrl+Shift+F",
+                "mac": "Command+Shift+I",
+                "windows": "Ctrl+Shift+F"
+
             },
             "description": "Insert any amount of fake data to a form field"
         }

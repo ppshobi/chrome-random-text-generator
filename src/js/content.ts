@@ -21,7 +21,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 
     let text= r.getLorem(length);
     let lastFocused = document.activeElement;
-
+    
     if(lastFocused != null 
         && ($(lastFocused).is('input') || $(lastFocused).is('textarea'))
         && ! ($(lastFocused).is('input:radio') || $(lastFocused).is('input:radio'))
