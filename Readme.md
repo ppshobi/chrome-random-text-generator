@@ -8,8 +8,7 @@ Built on top on faker.js. Huge thanks to @marak/faker.js
 Node, TypeScript, fakerjs
 ## Installation
 Goto the extension page and install.
-http://bit.ly/2P6zUwS
-
+https://chrome.google.com/webstore/detail/random-text-generator/lmealcdbihjhocippaajjhijhjciaojo
 `Alt + Shift + I` to insert fakeness.
 
 ## Building Instructions
