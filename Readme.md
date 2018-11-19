@@ -29,3 +29,7 @@ https://chrome.google.com/webstore/detail/random-text-generator/lmealcdbihjhocip
   Honestly, this project was my effort to learn TypeScript, as well as chrome API's, Still more than halfway to go. I will try to keep adding features.
   
  feel completely free to make PR's and create issues. I would love em to see up here. And let me know what you guys think!
+# Demo Video
+[![Chrome random text generator](http://img.youtube.com/vi/rHE4E0Ly1ZA/0.jpg)](https://www.youtube.com/watch?v=rHE4E0Ly1ZA)
+
+
